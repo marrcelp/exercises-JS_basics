@@ -1,4 +1,4 @@
-
+t
 > :rocket: *Potrzebujesz pomocy w rozwiązaniu zadania? Nie wiesz, czy Twój kod jest wystarczająco dobry? Chcesz skonsultować CV lub szukasz zespołu, do wspólnego projektu? To wszystko znajdziesz na naszym serwerze Discord. Dostęp jest **bezpłatny i bez zobowiązań**. :white_check_mark: [Dołącz teraz](https://devmentor.pl/discord) do naszej społeczności!*
 
 &nbsp;
