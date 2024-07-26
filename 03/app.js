@@ -16,33 +16,44 @@ function getSum(a, b, c) {
 
     if (a > b && b > c) {
         sum = a + b;
-        console.log(sum);
-        return sum;
 
     } else if (a > b && b < c) {
         sum = a + c;
-        console.log(sum);
-        return sum;
 
     } else  {
         sum = b + c;
-        console.log(sum);
-        return sum;
     }
+    console.log(`Suma 2 największych wylosowanych liczb wynosi: ${sum}`);
+    return sum;
 }
 
-getSum(a, b, c);
-
 const isEven = (number) => {
-
-    console.log(number);
 
     if (typeof number !== 'number') {
         console.log('To nie jest liczba!')
         return null;
 
-    } else if (typeof number === 'number') {
-        number % 2 == 0 ? console.log(true) : console.log(false);
+    } else {
+        return number % 2 == 0 ? true : false;
     }
 }
-isEven(21991)
+
+function showInfo(number, val) {
+    switch(val) {
+        case null:
+            console.log(`Podany argument ${number} nie jest liczba`)
+            break;
+
+        case true:
+            console.log(`Podany argument ${number} jest parzysty`)
+            break;
+
+        case false:
+            console.log(`Podany argument ${number} jest nieparzysty`)
+            break;
+    }
+}
+
+const sum = getSum(a, b, c);
+const even = isEven(sum);
+showInfo(sum, even);
