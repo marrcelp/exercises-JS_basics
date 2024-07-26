@@ -29,7 +29,20 @@ function getSum(a, b, c) {
         console.log(sum);
         return sum;
     }
-
 }
 
 getSum(a, b, c);
+
+const isEven = (number) => {
+
+    console.log(number);
+
+    if (typeof number !== 'number') {
+        console.log('To nie jest liczba!')
+        return null;
+
+    } else if (typeof number === 'number') {
+        number % 2 == 0 ? console.log(true) : console.log(false);
+    }
+}
+isEven(21991)
