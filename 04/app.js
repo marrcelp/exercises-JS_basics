@@ -8,7 +8,7 @@ function createArray(min, max) {
     console.log(arr);
 }
 
-createArray(0, 100);
+createArray(10, 200);
 
 function sortArray(arr) {
     const sortedArray = arr.sort((a, b) => b - a).slice(0, 10);
@@ -16,4 +16,12 @@ function sortArray(arr) {
     return sortedArray;
 }
 
-sortArray(arr);
+const topTen = sortArray(arr);
+
+function getAvg(arr){
+    const arraySum = arr.reduce((acc, currentElement) => acc + currentElement);
+    const avg = arraySum / arr.length;
+    console.log(`Srednia arytmetyczna tablicy wynosi: ${avg}`);
+}
+
+getAvg(topTen);
